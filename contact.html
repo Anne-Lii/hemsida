@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anne-Lii´s sida</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="logo/annelii_hansen.jpg" alt="logga" width="600"></a>
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="courses.html">Kurser</a></li>
+                    <li><a href="pictures.html">Bilder</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="headtitlecontact">
+                <h1>Kontakta mig</h1>
+            </div><!--Här slutar div id contact me-->
+
+            <p>Du kan kontakta mig via min mail eller genom att fylla i detta formulär</p>
+            <br>
+
+            <form action="http://miun.se" method="get">
+                <fieldset>
+                    <legend>Kontaktformulär:</legend>
+                    <label><img src="pictures/icons/user.png" alt="user icon" title="user icon">  <input type="text"
+                            name="name" placeholder="Förnamn och Efternamn"></label>
+                    <br><br>
+                    <label id="mail"><img src="pictures/icons/envelope.png" alt="mail icon" title="mail icon">   <input
+                            type="text" name="name" placeholder="Din e-mail adress"></label>
+                    <br>
+                    <br>
+                    <label>Yrke:</label>
+                    <select name="Yrke">
+                        <option value="projektledare">Projektledare</option>
+                        <option value="UX-designer">UX-designer</option>
+                        <option value="Frontend-utvecklare">Frontend-utvecklare</option>
+                        <option value="Backend-utvecklare">Backend-utvecklare</option>
+                        <option value="Fullstack-utvecklare">Fullstack-utvecklare</option>
+                    </select>
+                    <br>
+                    <p>Nyhetsbrev:<input type="checkbox" name="newsletter" value=""></p>
+                    <p>Anställd:
+                        <input type="radio" name="employ" value="Ja">Ja
+                        <input type="radio" name="employ" value="Nej">Nej
+                    </p>
+                    <p>Meddelande:</p>
+                    <textarea name="message" cols="20" rows="4"></textarea>
+                    <br>
+                    <input type="submit" name="Skicka in" value="Skicka in">
+                    <input type="reset" name="Nollställ" value="Nollställ">
+                </fieldset>
+            </form>
+            <br><br>
+        </main>
+        <div class="footer">
+            <footer>
+                <p>
+                    Kurskod: DT057G<br>
+                    2023-09-19 <br>
+                    &copy; Anne-Lii Hansen<br>
+                    <a href="mailto:anha2324@student.miun.se">Maila mig</a>
+                </p>
+            </footer>
+        </div><!--Här slutar div class footer-->
+    </div><!--Här slutar div class container-->
+
+</body>
+
+</html>

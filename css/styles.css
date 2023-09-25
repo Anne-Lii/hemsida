@@ -1,0 +1,265 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/21/13/29/yellow-1845394_1280.jpg");
+    /*bakgrundsbild hämtad från sida med free royalty*/
+    background-size: cover;
+    /*bakgrundsbilden täcker hela webbläsaren*/
+
+}
+
+.container {
+    /*genomskinlig så att man ser bakgrundsbilden igenom, bredd i % och maxbredd i pixlar. centrerad*/
+    background-color: white;
+    opacity: 90%;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header img {
+    /* selector för min logga max-bredd 100% för att den ska "följa med" när man gör sidan smalare*/
+    max-width: 100%;
+}
+
+main {
+    /*innehållet håller sig innanför sin box. när det behövs visas en scrollbar*/
+    overflow: auto;
+    padding-left: 15px;
+}
+
+
+div #headtitleindex {
+    /*positionering av mina rubriker*/
+    position: relative;
+    text-align: center;
+}
+
+div #headtitlepictures1 {
+    position: relative;
+    text-align: center;
+}
+
+div #headtitlepictures2 {
+    position: relative;
+    text-align: center;
+}
+
+div #headtitlepictures3 {
+    position: relative;
+    text-align: center;
+}
+
+div #headtitlecourses {
+    position: relative;
+    text-align: left;
+}
+
+h1 {
+    color: rgb(205, 178, 29);
+    text-shadow: 2px 2px 5px rgba(205, 178, 29);
+    padding-bottom: 30px;
+}
+
+nav ul {
+    /*navigerings menyn unordered list*/
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+}
+
+nav li {
+    /*listan med länkar float left så de lägger sig i sidled efter varandra*/
+    display: inline;
+    float: left;
+    padding: 0.5rem;
+    max-width: 100%;
+}
+
+nav li a {
+    /*själva länkarna i listan*/
+    text-align: center;
+    color: rgb(205, 178, 29);
+    text-decoration: none;
+    padding: 0.3rem;
+    text-shadow: 2px 2px 5px rgba(205, 178, 29);
+    max-width: 100%;
+}
+
+nav a:hover {
+    background-color: rgb(253, 249, 232);
+}
+
+nav a:active {
+    color: rgb(83, 32, 40);
+    background-color: rgb(131, 114, 20);
+}
+
+nav a:visited {
+    color: rgb(113, 99, 17);
+}
+
+
+.twocolumns {
+    /*mina två spalter på undersidorna med bilder */
+    width: 100%;
+}
+
+.nav2 {
+    /* andra navigeringen, alltså undermeny till de tre bildsidorna*/
+    color: rgb(205, 178, 29);
+    height: 200px;
+    float: left;
+    position: fixed;
+    /*fixerad position så att menyn följer med när man scrollar nedåt vid en avsmalnad webbbläsare*/
+}
+
+.nav2 ul {
+    /*unordered list */
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.nav2 ul li {
+    /*listan med länkar*/
+    list-style: none;
+}
+
+.nav2 a {
+    /*länkarna i undermenyn*/
+    text-decoration: none;
+    color: rgb(205, 178, 29);
+    text-shadow: 2px 2px 5px rgba(205, 178, 29);
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.nav2 img {
+    /*liten streckgubbe nedanför undermenyn*/
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 12%;
+    max-width: 75px;
+    background-color: transparent;
+}
+
+.nav2 a:hover {
+    background-color: rgb(248, 242, 217);
+}
+
+.nav2 a:active {
+    color: rgb(83, 32, 40);
+}
+
+.nav2 a:visited {
+    color: rgb(113, 99, 17);
+}
+
+
+.column2 {
+    /*column till höger som innehåller bilder på bild-undersidorna */
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+.grabbar {
+    /*klassen som innehåller alla bilderna på bild-undersidorna*/
+    float: right;
+    margin: auto;
+    padding-right: 5px;
+}
+
+.grabbar img {
+    width: 100%;
+    max-width: 350px;
+}
+
+#bloggen {
+    /*centrerat blogginläggen*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date {
+    /*annan storlek och bold på datumet som skrivs ut under bloggbilderna*/
+    font-size: larger;
+    font-weight: bold;
+}
+
+p {
+    /*en annan fontfamilj till mina p texter*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    /*inline redigering*/
+    color: red;
+    font-size: large;
+}
+
+
+fieldset {
+    /*kontaktformulärets bredd, inramning, färg på inramning, rundade kanter och allt centrerat*/
+    width: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+legend {
+    /*texten som står centrerat längst upp i kontaktformuläret*/
+    color: rgb(205, 178, 29);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+input {
+    /*input i skrivfälten svarta och centrerade*/
+    color: black;
+    text-align: center;
+}
+
+select {
+    text-align: center;
+}
+
+table {
+    /*min kurslista*/
+    position: relative;
+}
+
+table thead td {
+    /*adderade lite tema-färg till min lista*/
+    background-color: rgb(205, 178, 29);
+}
+
+table tfoot td {
+    /*adderade lite tema-färg till min lista*/
+    background-color: rgb(205, 178, 29);
+}
+
+tr td {
+    /*la till en annan font-familj och större storlek i min kurslista*/
+    font-family: 'Courier New', Courier, monospace, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+
+.footer {
+    opacity: 90%;
+    color: rgb(205, 178, 29);
+    max-width: 1300px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+footer p a {
+    /*"Maila mig" i min footer position absolute*/
+    position: absolute;
+}
